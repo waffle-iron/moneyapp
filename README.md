@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/martianoff/moneyapp.png?label=ready&title=Ready)](https://waffle.io/martianoff/moneyapp)
 ## README
 
 This README would normally document whatever steps are necessary to get the
