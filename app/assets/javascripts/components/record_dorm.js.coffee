@@ -16,37 +16,31 @@
     @state.title && @state.date && @state.amount
   render: ->
     React.DOM.form
-      className: 'form-inline'
+      className: 'records__form'
       onSubmit: @handleSubmit
-      React.DOM.div
-        className: 'form-group'
-        React.DOM.input
-          type: 'text'
-          className: 'form-control'
-          placeholder: 'Date'
-          name: 'date'
-          value: @state.date
-          onChange: @handleChange
-      React.DOM.div
-        className: 'form-group'
-        React.DOM.input
-          type: 'text'
-          className: 'form-control'
-          placeholder: 'Title'
-          name: 'title'
-          value: @state.title
-          onChange: @handleChange
-      React.DOM.div
-        className: 'form-group'
-        React.DOM.input
-          type: 'number'
-          className: 'form-control'
-          placeholder: 'Amount'
-          name: 'amount'
-          value: @state.amount
-          onChange: @handleChange
+      React.DOM.input
+        type: 'text'
+        className: 'records__form__input'
+        placeholder: 'Date'
+        name: 'date'
+        value: @state.date
+        onChange: @handleChange
+      React.DOM.input
+        type: 'text'
+        className: 'records__form__input'
+        placeholder: 'Title'
+        name: 'title'
+        value: @state.title
+        onChange: @handleChange
+      React.DOM.input
+        type: 'number'
+        className: 'records__form__input'
+        placeholder: 'Amount'
+        name: 'amount'
+        value: @state.amount
+        onChange: @handleChange
       React.DOM.button
         type: 'submit'
-        className: 'btn btn-primary'
+        className: 'btn records__form__btn'
         disabled: !@valid()
         'Create record'
